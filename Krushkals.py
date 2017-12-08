@@ -45,16 +45,21 @@ def sortGraphByVertices(inputGraph):
     #incomplete
     #https://stackoverflow.com/questions/4233476/sort-a-list-by-multiple-attributes
     #sort the Graphs lexcicographically of their first vertices
-     sorted(inputGraph, key=lambda x:x[0])
-     print(inputGraph)
+     inputGraph = sorted(inputGraph, key = lambda x: (x[0], x[1], x[2]) )
+
+     return(inputGraph)
 
 def removeParallelEdges(inputGraph):
     #incomplete
     #function to remove multiple egdes from the same pair of veritces
-    sortGraphByVertices(inputGraph)
-    newGraph = inputGraph
-    samePairList = []
-    # for row in inputGraph:
+    inputGraph = sortGraphByVertices(inputGraph)
+    inputGraph
+    newGraph = []
+    # while inputGraph:
+
+
+
+
 
 
 
@@ -69,4 +74,3 @@ if __name__ == '__main__':
 
     #remove multiple egdes between the same verices pair
     inputGraph = sortVertices(inputGraph)
-    sortGraphByVertices(inputGraph)
